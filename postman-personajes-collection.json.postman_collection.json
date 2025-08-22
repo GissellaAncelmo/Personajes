@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "907b655c-8a0c-4157-be2b-6b8c0b095e5e",
+		"name": "postman/personajes-collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45855398",
+		"_collection_link": "https://lizet-5498632.postman.co/workspace/lizet's-Workspace~2f0ca82d-5524-442d-8b7b-39385d632cde/collection/45855398-907b655c-8a0c-4157-be2b-6b8c0b095e5e?action=share&source=collection_link&creator=45855398"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/personajes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Harry Potter\",\r\n  \"descripcion\": \"El niño que vivió\",\r\n  \"identificacion\": \"HP001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/personajes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personajes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todos los personajes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/personajes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personajes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar personaje por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/personajes/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personajes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear personaje",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Hermione Granger\",\r\n  \"identificacion\": \"HG001\",\r\n  \"imagen\": \"https://example.com/hermione.jpg\",\r\n  \"rol\": \"Protagonista\",\r\n  \"descripcion\": \"La bruja más brillante de su generación\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/personajes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personajes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener personaje por id ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Hermione Granger\",\r\n  \"identificacion\": \"HG001\",\r\n  \"imagen\": \"https://example.com/hermione.jpg\",\r\n  \"rol\": \"Protagonista\",\r\n  \"descripcion\": \"La bruja más brillante de su generación\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/personajes/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personajes",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar si existe personaje por id ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Hermione Granger\",\r\n  \"identificacion\": \"HG001\",\r\n  \"imagen\": \"https://example.com/hermione.jpg\",\r\n  \"rol\": \"Protagonista\",\r\n  \"descripcion\": \"La bruja más brillante de su generación\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/personajes/verificar/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personajes",
+						"verificar",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar personaje ",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Hermione Jean Granger\",\r\n  \"rol\": \"Bruja brillante\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/personajes/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personajes",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
