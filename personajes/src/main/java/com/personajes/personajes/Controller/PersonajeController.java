@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController  //  maneja endpoints REST
-@RequestMapping("/api/personajes")  // Todas las rutas empiezan con /api/personajes
+@RequestMapping("/api/personajes")  // empiezan con /api/personajes
 public class PersonajeController {
 
     private final PersonajeService personajeService;
@@ -111,7 +111,7 @@ public class PersonajeController {
         return ResponseEntity.ok(personajes);  // 200 OK + personajes recientes
     }
 
-    // GET /api/personajes/estadisticas - OBTENER ESTADÍSTICAS
+    // GET /api/personajes/estadisticas - OBTENER ESTADÍSTICAS --(Cuantos perosnajes hay)
 
     @GetMapping("/estadisticas")
     public ResponseEntity<Map<String, Object>> obtenerEstadisticas() {
