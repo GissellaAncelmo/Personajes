@@ -13,7 +13,7 @@ class JacksonConfig {
     public ObjectMapper objectMapper() {
         ObjectMapper objectMapper = new ObjectMapper();
 
-        // Registra el módulo para manejar fechas Java 8+ (LocalDateTime, etc.)
+       
         objectMapper.registerModule(new JavaTimeModule());
 
         // Configuraciones útiles
