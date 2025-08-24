@@ -17,7 +17,7 @@ class CacheConfig {
     public CacheManager cacheManager() {
         ConcurrentMapCacheManager cacheManager = new ConcurrentMapCacheManager();
 
-        // Define los nombres de cache que vas a usar
+        
         cacheManager.setCacheNames(Arrays.asList(
                 "personajes",           // Cache individual de personajes por ID
                 "personajes-list",      // Cache de listas de personajes
